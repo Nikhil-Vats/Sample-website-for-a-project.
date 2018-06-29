@@ -1,0 +1,275 @@
+
+<!DOCTYPE html>
+<html>
+<title>BOSM 2K18</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="bosmcss.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.bosm-bar-item:hover{transition:background-color 1s}
+.bosm-button:hover{transition:background-color 1s}
+</style>
+<body>
+<!-- Navbar -->
+<!-- Sidebar -->
+
+<div class="bosm-top" id="buttons-head">
+  <div class="bosm-bar bosm-black bosm-card">
+    <a class="bosm-bar-item bosm-button bosm-padding-large bosm-hide-medium bosm-hide-large bosm-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+<div class="bosm-sidebar bosm-bar-block bosm-animate-left" style="display:none;z-index:5" id="mySidebar">
+  <button class="bosm-bar-item bosm-button bosm-large" onclick="bosm_close()">Close &times;</button>
+  <a href="#" class="bosm-bar-item bosm-button">Link 1</a>
+  <a href="#" class="bosm-bar-item bosm-button">Link 2</a>
+  <a href="#" class="bosm-bar-item bosm-button">Link 3</a>
+</div>
+
+<!-- Page Content -->
+<div class="bosm-overlay bosm-animate-opacity" onclick="bosm_close()" style="cursor:pointer" id="myOverlay"></div>
+
+<div>
+  <button class="bosm-button bosm-white bosm-xxlarge" onclick="bosm_open()">&#9776;</button>
+</div>
+     
+<script>
+function bosm_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+function bosm_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+          
+
+
+    <a href="#" class="bosm-bar-item bosm-button bosm-padding-large">HOME</a>
+    <a href="#events" class="bosm-bar-item bosm-button bosm-padding-large bosm-hide-small">EVENTS</a>
+    <a href="#register" class="bosm-bar-item bosm-button bosm-padding-large bosm-hide-small">REGISTER</a>
+    <a href="#contacts" class="bosm-bar-item bosm-button bosm-padding-large bosm-hide-small">CONTACTS</a>
+    <div class="bosm-dropdown-hover bosm-hide-small">
+      <button class="bosm-padding-large bosm-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
+      <div class="bosm-dropdown-content bosm-bar-block bosm-card-4">
+        <a href="#" class="bosm-bar-item bosm-button">ABOUT</a>
+        <a href="#" class="bosm-bar-item bosm-button">PROF SHOWS</a>
+        <a href="#" class="bosm-bar-item bosm-button">MERCHANDISE</a>
+      </div>
+    </div>
+    <a href="javascript:void(0)" class="bosm-padding-large bosm-hover-red bosm-hide-small bosm-right"><i class="fa fa-search"></i></a>
+  </div>
+</div>
+
+<!-- Navbar on small screens -->
+<div id="navDemo" class="bosm-bar-block bosm-black bosm-hide bosm-hide-large bosm-hide-medium bosm-top" style="margin-top:46px">
+  <a href="#events" class="bosm-bar-item bosm-button bosm-padding-large">EVENTS</a>
+  <a href="#sponsors" class="bosm-bar-item bosm-button bosm-padding-large">SPONSORS</a>
+  <a href="#contacts" class="bosm-bar-item bosm-button bosm-padding-large">CONTACTS</a>
+  <a href="#" class="bosm-bar-item bosm-button bosm-padding-large">MERCH</a>
+</div>
+
+<!-- Page content -->
+<div class="bosm-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- Automatic Slideshow Images -->
+  <div class="mySlides bosm-display-container bosm-center">
+    <img src="bosm.png" style="width:100%">
+    <div class="bosm-display-bottommiddle bosm-container bosm-text-white bosm-padding-32 bosm-hide-small">
+    </div>
+  </div>
+  <div class="mySlides bosm-display-container bosm-center">
+    <img src="bosm1.jpg" style="width:100%">
+    <div class="bosm-display-bottommiddle bosm-container bosm-text-white bosm-padding-32 bosm-hide-small">      
+    </div>
+  </div>
+  <div class="mySlides bosm-display-container bosm-center">
+   <img src="bosm2.jpg" style="width:100%">
+    <div class="bosm-display-bottommiddle bosm-container bosm-text-white bosm-padding-32 bosm-hide-small">
+    </div>
+  </div>
+
+  <!-- The Band Section -->
+  <div class="bosm-container bosm-content bosm-center bosm-padding-64" style="max-width:800px" id="events">
+    <h2 class="bosm-wide">THE BOSM 2K18</h2>
+    <p class="bosm-opacity"><i>We love sports!</i></p>
+    <p class="bosm-justify">BITS Open Sports Meet (BOSM) is the annual sports festival of Birla Institute of Technology and Science, Pilani campus. This sports meet, usually held around mid-September is a prominent showcase of sporting talents from around the country and abroad too.
+
+One of the largest student managed Sports fests of the country, BOSM is aimed to provide a platform to colleges from all over India to exhibit their true potential, promoting healthy competition.</p>
+    <div class="bosm-row bosm-padding-32">
+      <div class="bosm-third">
+        <p>GAMES</p>
+        <img src="SPORTS.jpg" class="bosm-round bosm-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+      <div class="bosm-third">
+        <p>PROF SHOWS</p>
+        <img src="EVENTS.jpg" class="bosm-round bosm-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+      <div class="bosm-third">
+        <p>TALKS</p>
+        <img src="TALKS.jpg" class="bosm-round" alt="Random Name" style="width:60%">
+      </div>
+    </div>
+  </div>
+
+ 
+  <div class="bosm-black" id="register">
+    <div class="bosm-container bosm-content bosm-padding-64" style="max-width:800px">
+      <h2 class="bosm-wide bosm-center">Save the DATES.</h2>
+      <p class="bosm-opacity bosm-center"><i>Remember to register!</i></p><br>
+
+      <ul class="bosm-ul bosm-border bosm-white bosm-text-grey">
+        <li class="bosm-padding">REGISTER<span class="bosm-tag bosm-red bosm-margin-left">Click to register.</span></li>
+      </ul>
+
+      <div class="bosm-row-padding bosm-padding-32" style="margin:0 -16px">
+        <div class="bosm-third bosm-margin-bottom">
+          <img src="https://media2.giphy.com/media/xUA7bfl3JCNxg14FYA/giphy.gif" alt="GIF not loading" style="width:100%" class="bosm-hover-opacity">
+          <div class="bosm-container bosm-white">
+            <p><b>Sports</b></p>
+            <p class="bosm-opacity">A total of 20 different sports competition organised at inter college level.</p>
+           
+            <button class="bosm-button bosm-black bosm-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">KNOW MORE</button>
+          </div>
+        </div>
+        <div class="bosm-third bosm-margin-bottom">
+          <img src="https://media2.giphy.com/media/TsWEqgYF7UoBq/giphy.gif" alt="GIF not loading" style="width:100%" class="bosm-hover-opacity">
+          <div class="bosm-container bosm-white">
+            <p><b>PROF SHOWS</b></p>
+            <p class="bosm-opacity">Experience music, laughter, grooves and much more.</p>
+           
+            <button class="bosm-button bosm-black bosm-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">KNOW MORE</button>
+          </div>
+        </div>
+        <div class="bosm-third bosm-margin-bottom">
+          <img src="https://media1.giphy.com/media/Wv8bhdd137UP6hMb0A/giphy.gif" alt="GIF not loading" style="width:100%" class="bosm-hover-opacity">
+          <div class="bosm-container bosm-white">
+            <p><b>TALKS</b></p>
+            <p class="bosm-opacity">Get motivated, listen to those who are top notch in their fields.</p>
+            
+            <button class="bosm-button bosm-black bosm-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">KNOW MORE</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Ticket Modal -->
+  <div id="ticketModal" class="bosm-modal">
+    <div class="bosm-modal-content bosm-animate-top bosm-card-4">
+      <header class="bosm-container bosm-teal bosm-center bosm-padding-32"> 
+        <span onclick="document.getElementById('ticketModal').style.display='none'" 
+       class="bosm-button bosm-teal bosm-xlarge bosm-display-topright">×</span>
+        <h2 class="bosm-wide"><i class="fa fa-suitcase bosm-margin-right"></i>Tickets</h2>
+      </header>
+      <div class="bosm-container">
+        <p><label><i class="fa fa-shopping-cart"></i>Save the dates!</label></p>
+        <input class="bosm-input bosm-border" type="text" placeholder="How many?">
+        <p><label><i class="fa fa-user"></i> Send To</label></p>
+        <input class="bosm-input bosm-border" type="text" placeholder="Enter email">
+        <button class="bosm-button bosm-block bosm-teal bosm-padding-16 bosm-section bosm-right">PAY <i class="fa fa-check"></i></button>
+        <button class="bosm-button bosm-red bosm-section" onclick="document.getElementById('ticketModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
+        <p class="bosm-right">Need <a href="#" class="bosm-text-blue">help?</a></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- The Contact Section -->
+  <div class="bosm-container bosm-content bosm-padding-64" style="max-width:800px" id="contacts">
+    <h2 class="bosm-wide bosm-center">CONTACT</h2>
+    <p class="bosm-opacity bosm-center"><i>Need help? Drop a note!</i></p>
+    <div class="bosm-row bosm-padding-32">
+      <div class="bosm-col m6 bosm-large bosm-margin-bottom">
+        <i class="fa fa-map-marker" style="width:30px"></i> Pilani, Rajasthan<br>
+        <i class="fa fa-phone" style="width:30px"></i> Phone: 9999999999<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: bosm@bits-pilani.ac.in<br>
+      </div>
+      <div class="bosm-col m6">
+        <form action="/action_page.php" target="_blank">
+          <div class="bosm-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="bosm-half">
+              <input class="bosm-input bosm-border" type="text" placeholder="Name" required name="Name">
+            </div>
+            <div class="bosm-half">
+              <input class="bosm-input bosm-border" type="text" placeholder="Email" required name="Email">
+            </div>
+          </div>
+          <input class="bosm-input bosm-border" type="text" placeholder="Message" required name="Message">
+          <button class="bosm-button bosm-black bosm-section bosm-right" type="submit">SEND</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+<!-- End Page Content -->
+</div>
+<!-- Add Google Maps 
+<div id="googleMap" style="height:400px;" class="bosm-grayscale-max"></div>
+<script>
+function myMap() {
+  myCenter=new google.maps.LatLng(41.878114, -87.629798);
+  var mapOptions= {
+    center:myCenter,
+    zoom:12, scrollwheel: false, draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA7pTdXSKz9PwrVmqXmWFNmtj-rI26sBME&callback=myMap"></script>-->
+<iframe style="width:100%" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3510.829553736456!2d75.58477941433881!3d28.36400230293597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39131964f43e4575%3A0x1fbad30854cf884d!2sBirla+Institute+of+Technology+and+Science!5e0!3m2!1sen!2sin!4v1521141096947" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+<!-- Footer -->
+<footer class="bosm-container bosm-padding-64 bosm-center bosm-opacity bosm-light-grey bosm-xlarge">
+  <i class="fa fa-facebook-official bosm-hover-opacity"></i>
+  <i class="fa fa-instagram bosm-hover-opacity"></i>
+  <i class="fa fa-snapchat bosm-hover-opacity"></i>
+  <i class="fa fa-pinterest-p bosm-hover-opacity"></i>
+  <i class="fa fa-twitter bosm-hover-opacity"></i>
+  <i class="fa fa-linkedin bosm-hover-opacity"></i>
+  <p class="bosm-medium">Powered by <a href="https://www.bits-pilani.ac.in" target="_blank">Coding Club</a></p>
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("bosm-show") == -1) {
+        x.className += " bosm-show";
+    } else { 
+        x.className = x.className.replace(" bosm-show", "");
+    }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
